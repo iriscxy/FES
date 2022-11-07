@@ -1,0 +1,17 @@
+absl==0.0
+absl_py==1.2.0
+attr==0.3.2
+attrs==22.1.0
+clip==0.2.0
+datasets==2.4.0
+filelock==3.8.0
+nltk==3.7
+numpy==1.23.1
+packaging==21.3
+Pillow==9.2.0
+rouge_score==0.1.2
+six==1.16.0
+torch==1.7.1
+tqdm==4.64.1
+transformers==4.16.0
+transformers.egg==info
