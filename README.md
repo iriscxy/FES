@@ -25,11 +25,11 @@ For data preprocessing, please run
 
 ```
 CUDA_VISIBLE_DEVICES=0 python3 run_mybart.py --model_name_or_path facebook/bart-base \
-											 --do_train --do_eval --train_file [train_file] \
-											 --validation_file [valid_file] \
-											 --test_file [test_file] --output_dir das\
-											 --exp_name cnndm --max_source_length 1024 \
-											 --max_target_length 100 --gene_dataset_path tgt_dir
+  --do_train --do_eval --train_file [train_file] \
+  --validation_file [valid_file] \
+  --test_file [test_file] --output_dir das \
+  --exp_name cnndm --max_source_length 1024 \
+  --max_target_length 100 --gene_dataset_path tgt_dir
 ```
 The preprocessing precedure will store the processed data as seperate json files in `tgt_dir`.
 
@@ -53,14 +53,14 @@ python3 run_mybart.py --model_name_or_path facebook/bart-large \
 ```
 ### Evaluate
 ```
-python3 run_mybart.py  --per_device_eval_batch_size 32 \
-									--log_root ./log --save_dataset_path tgt_dir \
-									--exp_name exp_name --do_predict \
-									--predict_with_generate True \
-									--output_dir das \
-									--val_max_target_length 120 \
-									--model_name_or_path model_path\
-									--lm_path lm_model
+python3 run_mybart.py --per_device_eval_batch_size 32 \
+  --log_root ./log --save_dataset_path tgt_dir \
+  --exp_name exp_name --do_predict \
+  --predict_with_generate True \
+  --output_dir das \
+  --val_max_target_length 120 \
+  --model_name_or_path model_path \
+  --lm_path lm_model
 ```
 
 ## Citation
